@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Skills.css";
 import { SKILLS } from "../../utils/data";
 import SkillCard from "./SkillCard/SkillCard";
+import SkillsInfoCard from "./SkillsInfoCard/SkillsInfoCard";
 
 const Skills = () => {
+  const [selectedSkill, setSlectedSkill] = useState(SKILLS[0]);
+  const handleSelectSkill = (data) => {
+    setSlectedSkill(data);
+  };
   return (
     <>
       <section className='"skills-container'>
@@ -15,11 +20,20 @@ const Skills = () => {
                 key={item.title}
                 iconUrl={item.icon}
                 title={item.title}
+                isActive={selectedSkill.title === item.title}
+                onClick={() => {
+                  handleSelectSkill(item);
+                }}
               />
             ))}
           </div>
 
-          <div className="skills-info"></div>
+          <div className="skills-info">
+            <SkillsInfoCard
+              heading={selectedSkill.title}
+              skills={selectedSkill.skills}
+            />
+          </div>
         </div>
       </section>
     </>
