@@ -10,5 +10,4 @@ const ContactInfoCard = ({ iconUrl, text }) => {
     </div>
   );
 };
-
 export default ContactInfoCard;

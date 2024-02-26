@@ -1,5 +1,5 @@
 .skills-info-card {
-  min-height: 23rem;
+  /*min-height: 23rem;*/
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
   background: rgba(22,17,47,0.398);
@@ -19,7 +19,7 @@
   padding: 2rem;
 }
 .skills-info {
-  display: flex;
+  /*display: flex;*/
   align-items: center;
   justify-content: space-between;
 }

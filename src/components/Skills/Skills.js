@@ -11,7 +11,7 @@ const Skills = () => {
   };
   return (
     <>
-      <section className='"skills-container'>
+      <section className="skills-container">
         <h5>Technical Proficiency</h5>
         <div className="skills-content">
           <div className="skills">
@@ -27,7 +27,6 @@ const Skills = () => {
               />
             ))}
           </div>
-
           <div className="skills-info">
             <SkillsInfoCard
               heading={selectedSkill.title}

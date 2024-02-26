@@ -24,5 +24,4 @@ const SkillsInfoCard = ({ heading, skills }) => {
     </div>
   );
 };
-
 export default SkillsInfoCard;
